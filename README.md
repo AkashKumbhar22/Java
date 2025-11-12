@@ -1,1 +1,1 @@
-This is repo is only for Educational Purpose Only.
+This repo is only for Educational Purpose Only.
