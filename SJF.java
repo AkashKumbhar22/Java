@@ -1,3 +1,4 @@
+/*SJF*/
 import java.util.*;
 
 public class SJF {

@@ -1,3 +1,4 @@
+/*FIFO*/
 import java.util.Scanner;
 
 public class FIFO {

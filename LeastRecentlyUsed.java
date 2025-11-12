@@ -1,3 +1,4 @@
+/*LeastRecentlyUsed*/
 import java.util.*;
 
 public class LeastRecentlyUsed {

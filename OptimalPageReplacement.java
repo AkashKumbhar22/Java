@@ -85,4 +85,4 @@ public class OptimalPageReplacement {
         System.out.printf("Hit Ratio:%.2f \nFault Ratio:%.2f ", hitRatio, faultRatio);
         sc.close();
     }
-} suppose you are teaching it to a student who dont know much coding but he has to perform this code in his practicals so explain accordingly line by line
+}

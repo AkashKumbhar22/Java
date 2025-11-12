@@ -1,3 +1,4 @@
+/*RRScheduling*/
 import java.util.*;
 
 class Process {
@@ -82,3 +83,18 @@ public class RRScheduling {
                 + "ms\nAverage waiting time of processor: " + (avgWAT / n) + "ms");
     }
 }
+
+//Input
+/*
+ *** RR Scheduling (Preemptive) ***
+Enter Number of Process: 2
+
+Enter the arrival time for P1: 0
+Enter the burst time for P1: 5
+
+Enter the arrival time for P2: 1
+Enter the burst time for P2: 3
+
+Enter time quantum: 2
+
+ */

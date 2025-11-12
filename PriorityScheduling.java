@@ -1,4 +1,4 @@
-
+/*PriorityScheduling*/
 import java.util.Scanner;
 
 class PriorityScheduling {
