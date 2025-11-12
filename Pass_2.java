@@ -21,14 +21,15 @@ public class Pass_2 {
     public static void main(String[] args) {
         Pass_2 pass2 = new Pass_2();
         try {
-            pass2.generateCode("IC.txt");
+            pass2.generateCode("ic.txt"); // 👈 lowercase filename
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     public void readTables() throws Exception {
-        BufferedReader br = new BufferedReader(new FileReader("SYMTAB.txt"));
+        
+        BufferedReader br = new BufferedReader(new FileReader("sym.txt"));
         String line;
         while ((line = br.readLine()) != null) {
             String[] parts = line.split("\\s+");
@@ -36,7 +37,7 @@ public class Pass_2 {
         }
         br.close();
 
-        br = new BufferedReader(new FileReader("LITTAB.txt"));
+        br = new BufferedReader(new FileReader("lit.txt"));
         while ((line = br.readLine()) != null) {
             String[] parts = line.split("\\s+");
             LITTAB.add(new TableRow(parts[1], Integer.parseInt(parts[2]), Integer.parseInt(parts[0])));
@@ -47,8 +48,7 @@ public class Pass_2 {
     public void generateCode(String filename) throws Exception {
         readTables();
         BufferedReader br = new BufferedReader(new FileReader(filename));
-        BufferedWriter bw = new BufferedWriter(new FileWriter("PASS2.txt"));
-        String line, code;
+        BufferedWriter bw = new BufferedWriter(new FileWriter("pass2.txt")); 
 
         while ((line = br.readLine()) != null) {
             String[] parts = line.split("\\s+");
@@ -82,6 +82,6 @@ public class Pass_2 {
 
         bw.close();
         br.close();
-        System.out.println("Pass 2 completed successfully! File generated: PASS2.txt");
+        System.out.println(" Pass 2 completed successfully! File generated: pass2.txt");
     }
 }
