@@ -1,0 +1,11 @@
+-------------------
+    Symbol Table
+-------------------
+Symbol    Address
+ START        0
+ A        0
+ L1        3
+ B        9
+ C        0
+ D        1
+ L2        7
