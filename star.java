@@ -304,6 +304,8 @@ public class star{
     }
 }*/
 
+//Diamond Pattern
+/* 
 import java.util.Scanner;
 public class star{
     public static void main(String[]args){
@@ -346,5 +348,189 @@ public class star{
 
         }    
     }
-}
+} */
  
+//pattern:increasing number triangle
+/* 
+import java.util.Scanner;
+public class star{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+            System.out.print("Enter the value of n: ");
+            int n = sc.nextInt();
+            for(int r=1,p=1;r<=n;r++,p++){
+                // for(int spaces=1;spaces<=n-r;spaces++){ //spaces=n-r
+                //     System.out.print("  ");
+                // }
+                for(int c=1;c<=r;c++){
+                    System.out.print( p+" ");}
+                // for(int z=2;z<=r;z++){
+                //     System.out.print(z + " ");
+                // }
+             //   for(int )
+                System.out.println();
+            }
+        }
+    } */
+
+//pattern:decreasing number triangle
+
+// import java.util.Scanner;
+// public class star{
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//             System.out.print("Enter the value of n: ");
+//             int n = sc.nextInt();
+//             for(int r=1,p=n;r<=n;r++,p--){
+//                 for(int c=1;c<=r;c++){
+//                     System.out.print( p+" ");}
+//                 System.out.println();
+//             }
+//         }
+//     } 
+
+
+/* 
+import java.util.Scanner;
+public class star{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+            System.out.print("Enter the value of n: ");
+            int n = sc.nextInt();
+            for(int r=1,p=1;r<=n;r++,p++){
+                for(int c=1;c<=r;c++){
+                    if(r%2==0){
+                    System.out.print("2");}
+                    else{
+                        System.out.print("1");
+                    }
+                // System.out.println();
+            }
+             System.out.println();
+        }
+    }
+} */
+
+    //Sqauare parallel bar pattern
+// import java.util.Scanner;
+// public class star{
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//             System.out.print("Enter the value of n: ");
+//             int n = sc.nextInt();
+//             for(int i =1;i<=n;i++){
+//                 for(int j=1;j<=n;j++){
+//                     if(j==1 || j==n){
+//                         System.out.print("*");
+//                     }
+//                     else{
+//                         System.out.print("  ");
+//                     }
+//                 }
+//              System.out.println();}
+//         }
+//     }
+
+//square plus pattern
+/* 
+import java.util.Scanner;
+public class star{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+            System.out.print("Enter the value of n: ");
+            int n = sc.nextInt();
+            for(int i =1;i<=n;i++){
+                for(int j=1;j<=n;j++){
+                    if(i==n/2+1 || j==n/2+1){
+                        System.out.print(" *");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+             System.out.println();}
+        }
+    } */
+
+//Cross Pattern
+/* 
+import java.util.Scanner;
+public class star{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+            System.out.print("Enter the value of n: ");
+            int n = sc.nextInt();
+            for(int i =1;i<=n;i++){
+                for(int j=1;j<=n;j++){
+                    if(i==j || i+j==n+1){
+                        System.out.print(" *");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+             System.out.println();}
+        }
+    } */
+
+//hollow increasing triangle
+/* 
+import java.util.Scanner;
+public class star{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+            System.out.print("Enter the value of n: ");
+            int n = sc.nextInt();
+            for(int i =1;i<=n;i++){
+                for(int j=1;j<=i;j++){
+                    if(i==n || j==1 ||i==j){
+                        System.out.print(" *");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                  //  System.out.print("");
+                }
+             System.out.println();}
+        }
+    }  */
+
+    //Hollow hill pattern
+    import java.util.Scanner;
+public class star{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the value of n: ");
+        int n = sc.nextInt();
+
+        for(int r=1;r<=n;r++)
+            {
+                for(int spaces=r;spaces<=n;spaces++)
+                {
+                    System.out.print(" ");
+                }
+            for(int column=1;column<=r;column++)
+                {
+                    if(r==n || column==1)
+                        {
+            System.out.print("*");
+                    }
+                    else{
+                        System.out.print(" ");
+                    }
+        }
+            for(int i=r-1;i>=1;i++){
+                if(r==n || i==1)
+                {
+                System.out.print( "*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+
+             System.out.println();
+        }    
+    }
+}
