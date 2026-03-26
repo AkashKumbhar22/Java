@@ -115,7 +115,6 @@ public class AdvancedForLoops {
                 }
          }  */
 
-/*Take input the number of rows and there desk */
 import java.util.Scanner;
 public class AdvancedForLoops {
     public static void main(String[] args) {
